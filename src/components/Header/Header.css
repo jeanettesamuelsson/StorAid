@@ -1,0 +1,20 @@
+header {
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 47px;
+}
+
+#contacts {
+    margin: 0.5rem 2rem;
+}
+
+#links {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 2rem;
+}

@@ -1,0 +1,22 @@
+:root {
+  --primary-bg-color: #FFFFFF;
+  --secondary-bg-color: #12372A;
+  --accent-color: #F1C30C;
+  --primary-color: #FFFFFF;
+  --secondary-color: #12372A;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: sans-serif;
+
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  height: 100dvh;
+}

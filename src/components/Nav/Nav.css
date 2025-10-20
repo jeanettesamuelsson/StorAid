@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 1rem;
+    
+    a {
+        text-decoration: none;
+        color: var(--secondary-bg-color);
+
+        &:active {
+            color: var(--accent-color);
+        }
+
+        &:hover {
+            color: var(--accent-color);
+        }
+    }
+}
