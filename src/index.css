@@ -1,6 +1,7 @@
 :root {
   --primary-bg-color: #FFFFFF;
   --secondary-bg-color: #12372A;
+  --color-3-bg-color: #FAF8EC;
   --accent-color: #F1C30C;
   --primary-color: #FFFFFF;
   --secondary-color: #12372A;
@@ -13,6 +14,10 @@
 
 .H4 {
   font-size: 24px;
+}
+
+.H3 {
+  font-size: 52px;
 }
 
 html {

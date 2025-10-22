@@ -6,6 +6,7 @@ import Contact from './components/pages/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import Nav from './components/Nav/Nav'
+import Subscribe from './components/Subscribe'
 
 
 
@@ -24,8 +25,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes> 
      </main>
+     <Subscribe />
      <Footer />
-     
+
     </div>
     </>
 
