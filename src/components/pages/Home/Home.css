@@ -1,0 +1,26 @@
+#hero {
+    background-color: #12372ad3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #F1FFEA;
+    height: 80%;
+    padding: 50px;
+
+}
+
+#hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 5rem;
+}
+
+.H4 {
+    color: var(--accent-color);
+}
+
+
+

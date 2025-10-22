@@ -14,11 +14,7 @@ li {
         text-decoration: none;
         color: var(--secondary-bg-color);
 
-        &:active {
-            color: var(--accent-color);
-        }
-
-        &:hover {
+        &.active {
             color: var(--accent-color);
         }
     }

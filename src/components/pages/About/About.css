@@ -1,0 +1,18 @@
+#hero {
+    background-color: #12372ad3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #F1FFEA;
+    height: 80%;
+    padding: 50px;
+
+}
+
+
+
+.H4 {
+    color: var(--accent-color);
+}
+
+

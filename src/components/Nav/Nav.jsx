@@ -2,6 +2,7 @@ import React from 'react'
 import StoraidLogo from '../Images/Logo.svg'
 import './Nav.css';
 import Button from '../Button/Button';
+import { NavLink } from 'react-router-dom';
 
 function Nav() {
   return (
@@ -13,9 +14,9 @@ function Nav() {
 
         <div id="nav-links">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/about">About Us</NavLink></li>
+                <li><NavLink to="/contact">Contact Us</NavLink></li>
             </ul>
         </div>
 
