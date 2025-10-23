@@ -2,6 +2,7 @@ import React from 'react'
 import heroImage from './Rectangle 2.svg'
 import './Home.css'
 import Button from '../../Button/Button'
+import AboutUs from '../../AboutUs'
 
 
 
@@ -22,6 +23,8 @@ function Home() {
       <img src={heroImage} alt="" />
 
     </section>
+
+    <AboutUs />
     
     </>
 

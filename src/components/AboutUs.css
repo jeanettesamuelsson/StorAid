@@ -1,0 +1,82 @@
+#about-us {
+    height: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#about-content {
+    width: 79%;
+    margin: auto;
+    color: var(--secondary-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#about-box  {
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-color);
+    height: 150px;
+    width: 615px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 80px;
+    transform: translateX(30px);
+    
+}
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.box-title {
+    font-size: 64px;
+    color: var(--accent-color);
+}
+
+.tiles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+
+}
+
+#about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 50%;
+}
+
+#about-contact {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 70%;
+    padding: 1rem;
+   
+}
+
+.H3 {
+    max-width: 60%;
+}
+
+#phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}

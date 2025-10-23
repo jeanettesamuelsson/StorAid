@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
   --primary-bg-color: #FFFFFF;
   --secondary-bg-color: #12372A;
@@ -5,14 +7,20 @@
   --accent-color: #F1C30C;
   --primary-color: #FFFFFF;
   --secondary-color: #12372A;
+  box-sizing: border-box;
 }
 
 .H1 {
   font-size: 80px;
   margin: 0;
+  font-weight: bold;
 }
 
 .H4 {
+  font-size: 25px;
+}
+
+.H5 {
   font-size: 24px;
 }
 
@@ -25,13 +33,14 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
   padding: 1rem;
+  
 
 }
 
 .container {
-  display: grid;
-  grid-template-rows: auto auto 1fr auto;
-  height: 100dvh;
+  /* display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
+  height: 100dvh; */
 }

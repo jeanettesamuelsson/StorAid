@@ -1,8 +1,11 @@
 import React from 'react'
 import './About.css'
+import AboutUs from '../../AboutUs'
 
 function About() {
   return (
+
+    <>
     <section id="hero">
       <div id="hero-text">
         <p className="H1">About Us</p>
@@ -10,6 +13,9 @@ function About() {
 
       </div>
     </section>
+
+    <AboutUs />
+    </>
   )
 }
 
