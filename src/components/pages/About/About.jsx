@@ -1,6 +1,8 @@
 import React from 'react'
 import './About.css'
 import AboutUs from '../../AboutUs'
+import Logoipsum from '../../Logoipsum'
+import Testimonials from '../../Testimonials'
 
 function About() {
   return (
@@ -15,6 +17,8 @@ function About() {
     </section>
 
     <AboutUs />
+    <Logoipsum />
+    <Testimonials />
     </>
   )
 }

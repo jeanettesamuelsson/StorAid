@@ -3,6 +3,8 @@ import heroImage from './Rectangle 2.svg'
 import './Home.css'
 import Button from '../../Button/Button'
 import AboutUs from '../../AboutUs'
+import Logoipsum from '../../Logoipsum'
+import Testimonials from '../../Testimonials'
 
 
 
@@ -25,6 +27,8 @@ function Home() {
     </section>
 
     <AboutUs />
+    <Logoipsum />
+    <Testimonials />
     
     </>
 

@@ -1,0 +1,9 @@
+#logo-banner {
+    background-color: var(--color-3-bg-color);
+    height: 148px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+
+}
