@@ -21,6 +21,7 @@ function About() {
     <Logoipsum />
     <Testimonials />
     <WhyUs />
+    
     </>
   )
 }

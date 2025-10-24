@@ -1,6 +1,7 @@
 import React from 'react'
 import './Contact.css'
 import Form from '../../Form'
+import GetInTouch from '../../GetInTouch'
 
 function Contact() {
   return (
@@ -13,8 +14,8 @@ function Contact() {
       </div>
     </section>
 
-    <Form />
-    
+    <GetInTouch />
+
     </>
   )
 }
