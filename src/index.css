@@ -47,4 +47,6 @@ body {
   /* display: grid;
   grid-template-rows: auto auto 1fr auto auto;
   height: 100dvh; */
+  max-width: 1920px;
+  margin: auto;
 }

@@ -3,6 +3,7 @@ import './About.css'
 import AboutUs from '../../AboutUs'
 import Logoipsum from '../../Logoipsum'
 import Testimonials from '../../Testimonials'
+import WhyUs from '../../WhyUs'
 
 function About() {
   return (
@@ -19,6 +20,7 @@ function About() {
     <AboutUs />
     <Logoipsum />
     <Testimonials />
+    <WhyUs />
     </>
   )
 }

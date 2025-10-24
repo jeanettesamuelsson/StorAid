@@ -5,6 +5,7 @@ import Button from '../../Button/Button'
 import AboutUs from '../../AboutUs'
 import Logoipsum from '../../Logoipsum'
 import Testimonials from '../../Testimonials'
+import WhyUs from '../../WhyUs'
 
 
 
@@ -29,6 +30,7 @@ function Home() {
     <AboutUs />
     <Logoipsum />
     <Testimonials />
+    <WhyUs />
     
     </>
 

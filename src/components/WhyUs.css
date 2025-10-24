@@ -1,0 +1,39 @@
+#notes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5rem;
+
+}
+
+.H3 {
+    max-width: max-content;
+}
+
+.note {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#WhyUs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1400px;
+    margin: auto;
+    gap: 1rem;
+  
+
+}
+
+#WhyUs-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 50%;
+}
