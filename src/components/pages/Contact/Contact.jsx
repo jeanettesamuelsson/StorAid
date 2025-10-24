@@ -1,8 +1,10 @@
 import React from 'react'
 import './Contact.css'
+import Form from '../../Form'
 
 function Contact() {
   return (
+    <>
      <section id="hero">
       <div id="hero-text">
         <p className="H1">Contact Us</p>
@@ -10,6 +12,10 @@ function Contact() {
 
       </div>
     </section>
+
+    <Form />
+    
+    </>
   )
 }
 

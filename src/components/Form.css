@@ -1,0 +1,72 @@
+.contact-form {
+  background-color: #FAF8EC;
+  max-width: 666px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 3rem;
+  border-radius: 7px;
+  color: var(--secondary-color);
+  margin: 2rem;
+}
+
+#form-row {
+  display: flex;
+  gap: 2rem; 
+  width: 100%;
+}
+
+#form-row .input-group {
+  flex: 1; 
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-input {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--accent-color);
+}
+
+textarea.form-input {
+  height: 150px;
+  resize: none;
+  
+}
+
+.invalid-input {
+  display: none;
+  color: firebrick;
+  font-size: 0.9rem;
+}
+
+button {
+    width: 156px;
+}
+
+.input-group:has(input:required) label::after {
+    content: " *";
+    color: firebrick;
+}
+
+.input-group:has(textarea:required) label::after {
+    content: " *";
+    color: firebrick;
+}
+
+input::placeholder {
+    color: var(--accent-color);
+
+}
+
+textarea::placeholder {
+    color: var(--accent-color);
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    
+}
