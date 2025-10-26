@@ -1,0 +1,46 @@
+#FindUs {
+    background-color: #12372ae0;
+    color: var(--secondary-color);
+}
+
+.H3 {
+    margin: 3rem;
+}
+
+#find-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+#find {
+    background-color: rgb(131, 156, 131);
+    padding: 3rem;
+    width: 40%;
+    
+}
+
+p{
+    font-size: 18px;
+}
+
+.find-icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+ 
+}
+
+.find-icon svg {
+
+    height: 35px;
+    width: 35px;
+    background-color: #12372ae0;
+    padding: 1rem;
+    border-radius: 50px;
+    color: var(--accent-color);
+        
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import './Contact.css'
 import Form from '../../Form'
 import GetInTouch from '../../GetInTouch'
+import FindUs from '../../FindUs'
 
 function Contact() {
   return (
@@ -15,6 +16,7 @@ function Contact() {
     </section>
 
     <GetInTouch />
+    <FindUs />
 
     </>
   )
