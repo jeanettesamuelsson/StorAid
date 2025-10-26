@@ -1,0 +1,65 @@
+#FAQ {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+.H3 {
+    margin: 0;
+}
+
+button {
+    width: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+
+#accordion-container {
+    
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 5rem;
+    padding: 2rem;
+    min-width: 50%;
+
+}
+
+.accordion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #ECECEC;
+    padding: 0.5rem 2rem 0.5rem;
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+    color: var(--secondary-color);
+
+}
+
+.faq-card {
+    width: 100%;
+}
+
+.accordion:hover{
+    background-color: var(--accent-color);
+}
+
+
+.answer {
+    padding: 0.5rem;
+    display: none;
+
+}
+
+.answer.open {
+    display: block;
+}

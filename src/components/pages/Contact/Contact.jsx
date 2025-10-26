@@ -3,20 +3,22 @@ import './Contact.css'
 import Form from '../../Form'
 import GetInTouch from '../../GetInTouch'
 import FindUs from '../../FindUs'
+import FAQ from '../../FAQ'
 
 function Contact() {
   return (
     <>
-     <section id="hero">
-      <div id="hero-text">
-        <p className="H1">Contact Us</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+      <section id="hero">
+        <div id="hero-text">
+          <p className="H1">Contact Us</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <GetInTouch />
-    <FindUs />
+      <GetInTouch />
+      <FindUs />
+      <FAQ />
 
     </>
   )
