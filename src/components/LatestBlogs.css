@@ -1,0 +1,11 @@
+#latest-blogs {
+    max-width: 1400px;
+    margin: auto;
+}
+
+#blog-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -1,0 +1,7 @@
+.blog-card {
+    background-color: var(--secondary-bg-color);
+    margin: 1rem;
+    border: 1px solid black;
+    height: 430px;
+    width: 500px;
+}

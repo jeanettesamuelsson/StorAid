@@ -6,6 +6,8 @@ import AboutUs from '../../AboutUs'
 import Logoipsum from '../../Logoipsum'
 import Testimonials from '../../Testimonials'
 import WhyUs from '../../WhyUs'
+import LatestBlogs from '../../LatestBlogs'
+
 
 
 
@@ -31,6 +33,8 @@ function Home() {
     <Logoipsum />
     <Testimonials />
     <WhyUs />
+    <LatestBlogs />
+    
     
     </>
 
