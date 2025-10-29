@@ -6,7 +6,7 @@ function Subscribe() {
   return (
     <section id="subscribe">
         <div id="subscribe-text">
-            <p class="H3">Subscribe To Our Newsletter</p>
+            <p className="H3">Subscribe To Our Newsletter</p>
             <p>Subscribe to our newsletter to receive early discount offers, updates and info</p>
         </div>
 

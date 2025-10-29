@@ -1,50 +1,88 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from './Button/Button'
 import './Form.css'
 
 function Form() {
-  return (
+
+  // add states
+  const [formData, setFormData] = useState({ name: '', email: '', telephone: '', subject: '', comment: '', })
+  const [submitted, setSubmitted] = useState(false)
+  
 
 
-    <form className="contact-form">
+  //function to handle changes in the form
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setFormData({ ...formData, [name]: value })          // (...Spread on formData, to set a new object
 
-      <div className="input-group">
-        <label htmlFor="firstName" className="form-label">Your Name</label>
-        <input type="text" id="firstName" className="form-input" placeholder="Your Name" required />
-        <p className="invalid-input">Error msg</p>
-      </div>
+  }
 
+  //function to handle submit 
 
-    <div id="form-row">
-      <div className="input-group">
-        <label htmlFor="email" className="form-label">E-mail</label>
-        <input type="email" id="email" className="form-input" placeholder="Email" required />
-        <p className="invalid-input">Error msg</p>
-      </div>
+  const handleSubmit = async (e) => {
+    e.preventDefault()
 
-      <div className="input-group">
-        <label htmlFor="telephone" className="form-label">Telephone</label>
-        <input type="text" id="telephone" className="form-input" placeholder="Telephone" />
-        <p className="invalid-input">Error msg</p>
-      </div>
-      </div>
+    const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/contact', {
 
-      <div className="input-group">
-        <label htmlFor="subject" className="form-label">Subject</label>
-        <input type="text" id="subject" className="form-input" placeholder="How can we help you" required />
-        <p className="invalid-input">Error msg</p>
-      </div>
+      method: 'post',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
 
-      <div className="input-group">
-        <label htmlFor="comments">Comments/Questions</label>
-        <textarea id="comments" className="form-input" rows={8} placeholder="Comments" required />
-        <p className="invalid-input">Error msg</p>
-      </div>
+    })
 
-      <Button id="submit-btn">Submit</Button>
-    </form>
-    
-  )
-}
+    // if results ok, set submitted to true, and reset the form 
 
-export default Form
+    if (res.ok) {
+      setSubmitted(true)
+      setFormData({ name: '', email: '', telephone: '', subject: '', comment: '', })  //reset form
+
+    }
+
+  }
+
+ 
+    return (
+
+      <form onSubmit={handleSubmit} noValidate className="contact-form">
+
+        <div className="input-group">
+          <label htmlFor="name" className="form-label">Your Name</label>
+          <input type="text" name="name" value={formData.name} onChange={handleChange} id="name" className="form-input" placeholder="Your Name" required />
+      
+        </div>
+
+        <div id="form-row">
+          <div className="input-group">
+            <label htmlFor="email" className="form-label">E-mail</label>
+            <input type="email" name="email" value={formData.email} onChange={handleChange} id="email" className="form-input" placeholder="Email" required />
+            
+          </div>
+
+          <div className="input-group">
+            <label htmlFor="telephone" className="form-label">Telephone</label>
+            <input type="text" name="telephone" value={formData.telephone} onChange={handleChange} id="telephone" className="form-input" placeholder="Telephone" />
+            
+          </div>
+        </div>
+
+        <div className="input-group">
+          <label htmlFor="subject" className="form-label">Subject</label>
+          <input type="text" name="subject" value={formData.subject} onChange={handleChange} id="subject" className="form-input" placeholder="How can we help you" required />
+          
+        </div>
+
+        <div className="input-group">
+          <label htmlFor="comment">Comments/Questions</label>
+          <textarea id="comment" name="comment" value={formData.comment} onChange={handleChange} className="form-input" rows={8} placeholder="Comment" required />
+          
+        </div>
+
+        <Button id="submit-btn">Submit</Button>
+      </form>
+
+    )
+  }
+
+  export default Form

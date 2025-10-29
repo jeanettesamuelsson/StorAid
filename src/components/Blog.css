@@ -1,7 +1,22 @@
 .blog-card {
     background-color: var(--secondary-bg-color);
+    padding: 2rem;
+    color: var(--primary-color);
     margin: 1rem;
-    border: 1px solid black;
-    height: 430px;
-    width: 500px;
+    border-radius: 10px;
+
+    a {
+        color: var(--accent-color);
+        text-decoration: none;
+    }
+
+
+}        
+
+.blog-card:hover {
+    background-color: #def2d3;
+    color: var(--secondary-color);
+    
+
 }
+

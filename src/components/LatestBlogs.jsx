@@ -1,31 +1,49 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './LatestBlogs.css'
 import Blog from './Blog'
 
 function LatestBlogs() {
-  return (
-    <section id="latest-blogs">
 
-        <p className="H4">Latest Blog and News</p>
+  const [blogItems, setBlogItems] = useState([])
 
-        <h3 className="H3">Check Out Our Latest Blog and News Update</h3>
+  useEffect(() => {
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida.</p>
+    const fetchData = async () => {
+    const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/blogs')
+    const data = await res.json()
+    setBlogItems(data)
 
-        <div id="blog-cards">
+  }
 
-        <Blog />
-        <Blog />
-        <Blog />
-
-        </div>
+  fetchData()
+  },[])
 
 
+return (
+  <section id="latest-blogs">
 
+    <p className="H4">Latest Blog and News</p>
 
-    
-    </section>
-  )
+    <h3 className="H3">Check Out Our Latest Blog and News Update</h3>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida.</p>
+
+    <div id="blog-cards">
+
+      {blogItems.map((item) => (
+
+        <Blog 
+        key={item.id}
+        title ={item.title}
+        description={item.description}
+        imageUrl={item.imageUrl}
+        created={item.created}/>
+
+      ))}
+
+    </div>
+  </section>
+)
+
 }
-
 export default LatestBlogs
