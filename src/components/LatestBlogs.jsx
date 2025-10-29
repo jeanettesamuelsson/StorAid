@@ -4,8 +4,11 @@ import Blog from './Blog'
 
 function LatestBlogs() {
 
+  //add state 
   const [blogItems, setBlogItems] = useState([])
 
+
+  //function to get data from API
   useEffect(() => {
 
     const fetchData = async () => {
