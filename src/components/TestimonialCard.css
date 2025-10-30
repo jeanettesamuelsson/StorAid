@@ -3,14 +3,13 @@
     color: var(--secondary-color);
     border-radius: 10px;
     padding: 2rem;
-  
 }
 
 .customer {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 0.5rem;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .avatar {

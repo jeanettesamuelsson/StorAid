@@ -1,13 +1,15 @@
 import React from 'react'
 import './TestimonialCard.css'
 import QuoteImg from './clientquote.svg'
+import StarRating from './StarRating'
 
 function TestimonialCard({comment, name, companyName, avatarUrl, rating}) {
     return (
 
         <div className="card">
             <div className="rate">
-                <p className="H5">{rating}</p>
+                
+                <p className="H5"> <StarRating rating = {rating} />  </p>
                 <p>{comment}</p>
             </div>
 
