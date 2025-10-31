@@ -1,0 +1,24 @@
+.answer {
+    padding: 0.5rem;
+    display: none;
+
+}
+
+.answer.active {
+    display: block;
+}
+
+
+.accordion.active {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+
+}
+
+.accordion svg {
+    transition: transform 0.8s ease;
+}
+
+.accordion.active svg {
+    transform: rotate(180deg);
+}

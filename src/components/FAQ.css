@@ -27,7 +27,7 @@ button {
     justify-content: flex-start;
     margin: 5rem;
     padding: 2rem;
-    min-width: 50%;
+    width: 100%;
 
 }
 
@@ -51,15 +51,4 @@ button {
 
 .accordion:hover{
     background-color: var(--accent-color);
-}
-
-
-.answer {
-    padding: 0.5rem;
-    display: none;
-
-}
-
-.answer.open {
-    display: block;
 }

@@ -10,10 +10,12 @@ function Form() {
   
 
 
-  //function to handle changes in the form
+  //function to handle changes in the form. get information from event
   const handleChange = (e) => {
-    const { name, value } = e.target
-    setFormData({ ...formData, [name]: value })          // (...Spread on formData, to set a new object
+
+    const {name, value} = e.target
+
+    setFormData({ ...formData, [name]: value })   // (...Spread on formData, updates the value of name, email etc 
 
   }
 
@@ -22,6 +24,7 @@ function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault()
 
+    //send to api
     const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/contact', {
 
       method: 'post',
@@ -32,12 +35,20 @@ function Form() {
 
     })
 
-    // if results ok, set submitted to true, and reset the form 
+    // if results ok, set submitted to true and reset the form 
 
     if (res.ok) {
+      const data = await res.text()
+      console.log(data)
+
       setSubmitted(true)
       setFormData({ name: '', email: '', telephone: '', subject: '', comment: '', })  //reset form
 
+
+      //If results not ok, show json error message
+    } else {
+      const data = await res.json()
+      console.log(data)
     }
 
   }
@@ -49,33 +60,33 @@ function Form() {
 
         <div className="input-group">
           <label htmlFor="name" className="form-label">Your Name</label>
-          <input type="text" name="name" value={formData.name} onChange={handleChange} id="name" className="form-input" placeholder="Your Name" required />
+          <input type="text" name="name" value={formData.name} onChange={handleChange} className="form-input" placeholder="Your Name" required />
       
         </div>
 
         <div id="form-row">
           <div className="input-group">
             <label htmlFor="email" className="form-label">E-mail</label>
-            <input type="email" name="email" value={formData.email} onChange={handleChange} id="email" className="form-input" placeholder="Email" required />
+            <input type="email" name="email" value={formData.email} onChange={handleChange} className="form-input" placeholder="Email" required />
             
           </div>
 
           <div className="input-group">
             <label htmlFor="telephone" className="form-label">Telephone</label>
-            <input type="text" name="telephone" value={formData.telephone} onChange={handleChange} id="telephone" className="form-input" placeholder="Telephone" />
+            <input type="text" name="telephone" value={formData.telephone} onChange={handleChange} className="form-input" placeholder="Telephone" />
             
           </div>
         </div>
 
         <div className="input-group">
           <label htmlFor="subject" className="form-label">Subject</label>
-          <input type="text" name="subject" value={formData.subject} onChange={handleChange} id="subject" className="form-input" placeholder="How can we help you" required />
+          <input type="text" name="subject" value={formData.subject} onChange={handleChange} className="form-input" placeholder="How can we help you" required />
           
         </div>
 
         <div className="input-group">
           <label htmlFor="comment">Comments/Questions</label>
-          <textarea id="comment" name="comment" value={formData.comment} onChange={handleChange} className="form-input" rows={8} placeholder="Comment" required />
+          <textarea name="comment" value={formData.comment} onChange={handleChange} className="form-input" rows={8} placeholder="Comment" required />
           
         </div>
 

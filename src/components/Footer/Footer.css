@@ -6,12 +6,24 @@ footer {
     color: var(--primary-color);
     font-size: 0.6rem;
     height: 90px;
-
 }
 
 #footer-links {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5rem;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
     gap: 0.5rem;
 }
+
+.footer-icon {
+    margin: 0;
+}
+
+
+
