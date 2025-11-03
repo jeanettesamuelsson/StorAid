@@ -1,0 +1,26 @@
+#our-services {
+    max-width: 1410px;
+     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+
+    .H4 {
+        margin-top: 5rem;
+    }
+}
+
+#top-wrapper {
+    max-width: 40%;
+}
+
+#bottom-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 4rem;
+    margin-bottom: 5rem;
+}

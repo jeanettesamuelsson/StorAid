@@ -1,11 +1,11 @@
 .tile {
     border: 2px solid grey;
     padding: 20px;
-    width: 322px;
-    height: 156px;
-    margin: 1rem;
+    width: 350px;
+    height: 180px;
     border-radius: 3px;
-    
+    margin: 1rem;
+
 }
 
 .tile:hover {
