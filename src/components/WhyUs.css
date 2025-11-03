@@ -3,29 +3,38 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 5rem;
-
 }
 
 .H3 {
     max-width: max-content;
+    margin: 5rem;
+    padding: 5rem;
 }
 
 .note {
     display:flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
+    margin: 0.5em;
+
+    p {
+        padding: 0.5rem;
+    }
 }
 
 #WhyUs {
+    height: 800px;
+    background-color: #FAF8EC;
+    padding: 5rem;
+}
+
+#whyus-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1400px;
+    width: 1400px;
     margin: auto;
-    gap: 1rem;
-  
 
 }
 

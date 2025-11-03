@@ -12,41 +12,45 @@ function LatestBlogs() {
   useEffect(() => {
 
     const fetchData = async () => {
-    const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/blogs')
-    const data = await res.json()
-    setBlogItems(data)
+      const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/blogs')
+      const data = await res.json()
+      setBlogItems(data)
 
-  }
+    }
 
-  fetchData()
-  },[])
+    fetchData()
+  }, [])
 
 
-return (
-  <section id="latest-blogs">
+  return (
+    <section id="latest-blogs">
 
-    <p className="H4">Latest Blog and News</p>
+      <p id="blogs-info">
 
-    <h3 className="H3">Check Out Our Latest Blog and News Update</h3>
+        <p className="H4">Latest Blog and News</p>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida.</p>
+        <h3 className="H3">Check Out Our Latest Blog and News Update</h3>
 
-    <div id="blog-cards">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida.</p>
 
-      {blogItems.map((item) => (
+      </p>
 
-        <Blog 
-        key={item.id}
-        title ={item.title}
-        description={item.description}
-        imageUrl={item.imageUrl}
-        created={item.created}/>
+      <div id="blog-cards">
 
-      ))}
+        {blogItems.map((item) => (
 
-    </div>
-  </section>
-)
+          <Blog
+            key={item.id}
+            title={item.title}
+            description={item.description}
+            imageUrl={item.imageUrl}
+            created={item.created} />
+
+        ))}
+
+      </div>
+    </section>
+  )
 
 }
 export default LatestBlogs

@@ -8,9 +8,13 @@ import WhyUsImg from './Bg-ImgWhyUs.svg'
 
 function WhyUs() {
   return (
+    
     <section id="WhyUs">
+      <div id="whyus-content">
+      
+        <div id="Whyus-wrapper-left">
 
-        <div>
+          <p className="H4">Why Choose Us</p>
 
         <h3 className ="H3">Choose Us for Exceptional Storage Solutions
         </h3>
@@ -59,6 +63,8 @@ function WhyUs() {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida.</p>
 
         <img src={WhyUsImg} alt="" />
+        </div>
+
         </div>
 
 
