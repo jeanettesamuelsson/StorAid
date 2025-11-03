@@ -7,29 +7,24 @@
   --accent-color: #F1C30C;
   --primary-color: #FFFFFF;
   --secondary-color: #12372A;
+  --font-h1: 80px;
+  --font-h3: 52px;
+  --font-h4: 25px;
+  --font-h5: 24px;
+  --font-h6: 20px;
+}
+
+.H1 { font-size: var(--font-h1); font-weight: bold; margin: 0; }
+.H3 { font-size: var(--font-h3); }
+.H4 { font-size: var(--font-h4); }
+.H5 { font-size: var(--font-h5); }
+.H6 { font-size: var(--font-h6); }
+
+
+* {
   box-sizing: border-box;
-}
-
-.H1 {
-  font-size: 80px;
   margin: 0;
-  font-weight: bold;
-}
-
-.H4 {
-  font-size: 25px;
-}
-
-.H5 {
-  font-size: 24px;
-}
-
-.H6 {
-  font-size: 20px;
-}
-
-.H3 {
-  font-size: 52px;
+  padding: 0;
 }
 
 html {
@@ -38,8 +33,6 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  padding: 1rem;
-  
 
 }
 

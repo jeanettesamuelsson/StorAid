@@ -18,7 +18,7 @@ function App() {
 
       <Header/ >
       <Nav />
-      <main>Hello react, rest of the page here!
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

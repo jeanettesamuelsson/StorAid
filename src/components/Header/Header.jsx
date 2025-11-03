@@ -8,22 +8,22 @@ import YoutubeIcon from './Youtube.svg'
 function Header() {
   return (
     <header>
-        
-    <div id ="contacts">
+
+      <div id="contacts">
 
         <span> 📞 +46 8 123 122 44</span>
         <span> 📧 contact@domain.com</span>
 
-        </div>
+      </div>
 
-     <div id="links"> 
+      <div id="links">
 
         <a href=""><img src={FacebookIcon} alt="Facebook-link" /></a>
         <a href=""><img src={XIcon} alt="X-link" /></a>
         <a href=""><img src={InstagramIcon} alt="Instagram-link" /></a>
         <a href=""><img src={YoutubeIcon} alt="Yotube-link" /></a>
-    
-        </div>   
+
+      </div>
 
     </header>
   )

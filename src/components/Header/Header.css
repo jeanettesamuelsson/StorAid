@@ -7,9 +7,16 @@ header {
     height: 47px;
 }
 
+ /* SCSS syntax vs vanlig CSS? vad funkar och inte? */
 #contacts {
     margin: 0.5rem 2rem;
+
+    span {
+        margin: 2rem;                    
+    }
 }
+
+
 
 #links {
     display:flex;
@@ -17,4 +24,8 @@ header {
     justify-content: center;
     gap: 1rem;
     margin: 0 2rem;
+}
+
+#links img {
+    margin: 0;
 }

@@ -1,21 +1,24 @@
-.H4 {
-    color: var(--accent-color);
-}
-
-.H3 {
-    margin:0;
-
-}
-
 #GetInTouch {
     margin: auto;
-    max-width: 80%;
+    width: 1364px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-}
+    img {
+        margin-bottom: 5rem;
+    }
 
-img {
-    margin-bottom: 5rem;
+    .H4 {
+        color: var(--accent-color);
+        margin: 2rem;
+        background-color: aquamarine;
+    }
+
+    .H3 {
+        margin: 1rem;
+        background-color: aquamarine;
+    }
+    
+
 }

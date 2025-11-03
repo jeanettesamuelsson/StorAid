@@ -25,9 +25,10 @@ button {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    margin: 5rem;
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 
 }
 
@@ -37,11 +38,11 @@ button {
     justify-content: space-between;
     cursor: pointer;
     background-color: #ECECEC;
-    padding: 0.5rem 2rem 0.5rem;
     width: 100%;
     text-align: left;
     font-weight: 600;
     color: var(--secondary-color);
+    padding: 1.2rem 2rem;
 
 }
 
