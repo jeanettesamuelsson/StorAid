@@ -9,6 +9,7 @@ import WhyUs from '../../WhyUs'
 import LatestBlogs from '../../LatestBlogs'
 import Services from '../../Services'
 import PricingPlan from '../../PricingPlan'
+import Banner from '../../Banner'
 
 
 
@@ -37,6 +38,7 @@ function Home() {
     <Testimonials />
     <WhyUs />
     <PricingPlan />
+    <Banner />
     <LatestBlogs />
     
     

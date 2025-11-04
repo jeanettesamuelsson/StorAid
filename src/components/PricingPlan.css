@@ -48,8 +48,8 @@
     }
 
     &:hover {
-        background-color: #236850a1;
-        color: var(--secondary-color);
+        background-color: #12372ad0;
+
 
         ul svg {
             background-color: var(--accent-color);
