@@ -15,7 +15,8 @@ li {
         color: var(--secondary-bg-color);
 
         &.active {
-            color: var(--accent-color);
+            font-size: 20px;
+            font-weight: 700;
         }
     }
 }
