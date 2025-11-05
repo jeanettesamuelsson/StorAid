@@ -26,6 +26,11 @@
   gap: 0.5rem;
 }
 
+.form-input.error {
+  border: 2px solid rgb(227, 46, 46);
+
+}
+
 .form-input {
   padding: 0.5rem 0.75rem;
   font-size: 1rem;
@@ -37,12 +42,6 @@ textarea.form-input {
   height: 150px;
   resize: none;
   
-}
-
-.invalid-input {
-  display: none;
-  color: firebrick;
-  font-size: 0.9rem;
 }
 
 button {
@@ -69,4 +68,40 @@ textarea::placeholder {
     font-family: Inter, sans-serif;
     font-size: 16px;
     
+}
+
+#submit-message {
+  background-color: #FAF8EC;
+  max-width: 666px;
+  padding: 10rem 3rem;
+  border-radius: 7px;
+  color: var(--secondary-color);
+  margin: 5rem;
+  background-color:  #FAF8EC;
+  text-align: center;
+
+  p {
+    margin: 3rem;
+  }
+
+  h2 {
+    margin: 3rem;
+  }
+}
+
+#form-btn {
+   background-color: rgb(42, 52, 50);
+    padding: 1rem;
+    color: var(--primary-color);
+    border-radius: 5px;
+    font-size: 15px;
+    width: 140px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--secondary-bg-color);
+        
+
+    }
+
 }
