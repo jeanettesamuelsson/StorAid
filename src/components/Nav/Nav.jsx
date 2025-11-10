@@ -17,6 +17,9 @@ function Nav() {
                 <li><NavLink to="/">Home</NavLink></li>
                 <li><NavLink to="/about">About Us</NavLink></li>
                 <li><NavLink to="/contact">Contact Us</NavLink></li>
+                <li><NavLink to="/booking">Booking</NavLink></li>
+                <li><NavLink to="/services">Services</NavLink></li>
+
             </ul>
         </div>
 

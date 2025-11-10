@@ -4,10 +4,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 47px;
+    height: 55px;
 }
 
- /* SCSS syntax vs vanlig CSS? vad funkar och inte? */
+
 #contacts {
     margin: 0.5rem 2rem;
 

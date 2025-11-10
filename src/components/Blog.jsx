@@ -4,7 +4,16 @@ import './Blog.css'
 function Blog({ title, description, imageUrl, created }) {
 
   const blogContent = description.slice(0, 150) + '...'
- 
+
+  let dateCreated = created.slice(0, 10);           
+  dateCreated = new Date(dateCreated);      
+
+  const formattedDate = dateCreated.toLocaleDateString('en-US', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  });
+  console.log(formattedDate);
 
 
   return (
@@ -12,7 +21,7 @@ function Blog({ title, description, imageUrl, created }) {
 
       <img className="blog-img" src={imageUrl} alt="" />
 
-      <p className="blog-created">{created}</p>
+      <p className="blog-created">{formattedDate}</p>
 
       <div className="blog-content">
         <h3 className="H6">{title}</h3>

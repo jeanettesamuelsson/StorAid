@@ -3,6 +3,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     font-size: 18px;
+    height: 100px;
 }
 
 li {

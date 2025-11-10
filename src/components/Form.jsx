@@ -4,7 +4,6 @@ import './Form.css'
 
 function Form() {
 
-  // states
   const [formData, setFormData] = useState({ name: '', email: '', telephone: '', subject: '', comment: '', })
   const [submitted, setSubmitted] = useState(false)
   const [errors, setErrors] = useState({})
@@ -13,7 +12,7 @@ function Form() {
   const handleChange = (e) => {
 
     const { name, value } = e.target
-    setFormData({ ...formData, [name]: value })   // (...Spread, updates the value of name, email etc
+    setFormData({ ...formData, [name]: value }) 
 
   }
 
@@ -86,6 +85,8 @@ function Form() {
 
 
   }
+
+  //output to user if submitted
 
   if (submitted) {
     return (

@@ -25,7 +25,7 @@ function LatestBlogs() {
   return (
     <section id="latest-blogs">
 
-      <p id="blogs-info">
+      <div id="blogs-info">
 
         <p className="H4">Latest Blog and News</p>
 
@@ -33,7 +33,7 @@ function LatestBlogs() {
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida.</p>
 
-      </p>
+      </div>
 
       <div id="blog-cards">
 

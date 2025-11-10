@@ -4,6 +4,10 @@
     color: var(--primary-color);
     margin: 1rem;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
 
     a {
         color: var(--accent-color);
@@ -11,7 +15,13 @@
     }
 
 
-}        
+}       
+
+.blog-content {
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
 .blog-card:hover {
     background-color: #def2d3;
