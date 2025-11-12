@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './Testimonials.css'
 import ClientImg from './clientimg.svg'
 import TestimonialCard from './TestimonialCard'
+import Testimonialsbg from './testimonials-bg.svg'
 
 function Testimonials() {
 

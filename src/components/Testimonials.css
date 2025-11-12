@@ -1,5 +1,7 @@
 #testimonials {
-    background-color: #12372ad3;
+    background: url('testimonials-bg.svg') center/cover no-repeat,
+        #12372acc;
+    background-blend-mode: multiply;
     padding: 7rem;
     height: auto;
     display: flex;
