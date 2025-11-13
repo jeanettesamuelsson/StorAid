@@ -6,19 +6,15 @@ import Testimonialsbg from './testimonials-bg.svg'
 
 function Testimonials() {
 
-    //add state 
-    const [testimonialItems, setTestimonialItems] = useState([])
+    const [testimonials, setTestimonials] = useState([])
 
-
-    //function to get data from API
     useEffect(() => {
 
         const fetchData = async () => {
             const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/testimonials')
             const data = await res.json()
 
-            setTestimonialItems(data)
-
+            setTestimonials(data)
         }
 
         fetchData()
@@ -35,22 +31,17 @@ function Testimonials() {
 
             <div id="cards">
 
-                {testimonialItems.map((item) => (
+                {testimonials.map((testimonial) => (
 
-                <TestimonialCard
-                    key={item.id}
-                    comment={item.comment}
-                    name={item.name}
-                    companyName={item.companyName}
-                    avatarUrl={item.avatarUrl}
-                    rating={item.rating}
-                />
-
-
-            ))}
-
-
-
+                    <TestimonialCard
+                        key={testimonial.id}
+                        comment={testimonial.comment}
+                        name={testimonial.name}
+                        companyName={testimonial.companyName}
+                        avatarUrl={testimonial.avatarUrl}
+                        rating={testimonial.rating}
+                    />
+                ))}
 
             </div>
 

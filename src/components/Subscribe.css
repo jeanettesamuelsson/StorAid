@@ -8,7 +8,7 @@
     padding: 4rem 3rem 4rem 3rem;
     color: var(--secondary-color);
 
-    .H3{
+    .H3 {
         font-weight: 600;
         margin: 0;
     }
@@ -23,10 +23,24 @@
 
         &::placeholder {
             color: #F1C30C;
-            margin-left: 2rem;
         }
+
     }
 
-   
+    #input-wrapper {
+        position: relative;
+    }
+
+    #input-wrapper::after {
+        content: "*";
+        color: red;
+        position: absolute;
+        left: 140px;
+        top: 30px;
+    }
+
+
+
+
 
 }

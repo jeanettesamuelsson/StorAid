@@ -10,11 +10,10 @@ function Subscribe() {
             <p>Subscribe to our newsletter to receive early discount offers, updates and info</p>
         </div>
 
-        <div>
+        <div id="input-wrapper">
             <input placeholder ="Enter your email" type="text" />
             <Button>Submit</Button>
         </div>
-
 
     </section>
   )
