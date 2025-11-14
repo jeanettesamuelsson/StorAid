@@ -2,6 +2,11 @@
     background-color: #12372ad0;
     color:  var(--primary-color);
 
+     button:hover {
+        background-color: rgb(255, 255, 255);
+        color: var(--secondary-color);
+    }
+
 }
 
 .banner-btn {

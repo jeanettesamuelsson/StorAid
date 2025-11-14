@@ -4,18 +4,22 @@ import './Form.css'
 
 function Form() {
 
+  //States
+
   const [formData, setFormData] = useState({ name: '', email: '', telephone: '', subject: '', comment: '', })
   const [submitted, setSubmitted] = useState(false)
   const [errors, setErrors] = useState({})
 
+  //Function to handle change
 
   const handleChange = (e) => {
 
     const { name, value } = e.target
-    setFormData({ ...formData, [name]: value }) 
+    setFormData({ ...formData, [name]: value })
 
   }
 
+  // Form validation 
 
   const validateForm = () => {
 
@@ -37,11 +41,12 @@ function Form() {
       newErrors.email = true
     }
 
-    setErrors(newErrors)                  //Set new error to Errors
-    return Object.keys(newErrors).length === 0         //returns true if none of the statements is true 
+    setErrors(newErrors)
+    return Object.keys(newErrors).length === 0
 
   }
 
+  //Function to handle submit
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -51,6 +56,7 @@ function Form() {
       return
     }
 
+    //Send form data to API / POST request
 
     const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/contact', {
 
@@ -64,29 +70,23 @@ function Form() {
 
     console.log(formData)
 
+    // Set submitted to true if response is ok
 
     if (res.ok) {
 
       const data = await res.text()
       console.log('Formulär skickat. API svar:', data)
 
-      // if results ok, set submitted to true and reset the form 
-
       setSubmitted(true)
-      setFormData({ name: '', email: '', telephone: '', subject: '', comment: '', })  //reset form
+      setFormData({ name: '', email: '', telephone: '', subject: '', comment: '', })
 
-
-      //If results not ok, show json error message or text
     } else {
       const errorData = await res.text()
       console.log('Något blev fel', errorData)
     }
-
-
-
   }
 
-  //output to user if submitted
+  //Output-message when form is submitted
 
   if (submitted) {
     return (

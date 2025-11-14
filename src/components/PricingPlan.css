@@ -28,6 +28,11 @@
     text-align: center;
     padding: 0.5rem;
 
+     button:hover {
+        background-color: rgb(255, 255, 255);
+        color: var(--secondary-color);
+    }
+
     .H3 {
         color: var(--accent-color);
     }

@@ -9,7 +9,8 @@
 
     &:hover {
         cursor: pointer;
-        background-color: goldenrod;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
 
     }
     

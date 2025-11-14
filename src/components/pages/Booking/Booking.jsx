@@ -11,11 +11,13 @@ import './Booking.css'
 
 function Booking() {
 
+    //Add states
+
     const [formData, setFormData] = useState({ name: '', email: '', selectedUnit: '', purpose: '', })
     const [submitted, setSubmitted] = useState(false)
     const [errors, setErrors] = useState({})
 
-
+    //Function to handle change
     const handleChange = (e) => {
 
         const { name, value } = e.target
@@ -23,7 +25,7 @@ function Booking() {
 
     }
 
-
+    //Form validation with RegEx
     const validateForm = () => {
 
         const newErrors = {}
@@ -44,12 +46,12 @@ function Booking() {
             newErrors.email = true
         }
 
-        setErrors(newErrors)                  //Set new error to Errors
-        return Object.keys(newErrors).length === 0         //returns true if none of the statements is true 
+        setErrors(newErrors)                  
+        return Object.keys(newErrors).length === 0         
 
     }
 
-
+    //Function to handle submit
     const handleSubmit = async (e) => {
         e.preventDefault()
 
@@ -58,7 +60,7 @@ function Booking() {
             return
         }
 
-
+    //Send form data to API
         const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/booking', {
 
             method: 'post',

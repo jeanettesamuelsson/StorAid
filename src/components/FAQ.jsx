@@ -1,55 +1,49 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import './FAQ.css'
 import Accordion from './Accordion'
 
 function FAQ() {
 
-    //add state
+    //Add state
 
-    const [AccordionItems, setAccordionItems] = useState ([])
+    const [accordions, setAccordions] = useState([])
 
-    //function to fetch data from API
+    //Function to fetch data from API
 
-    useEffect( () => {
+    useEffect(() => {
         const fetchData = async () => {
-            const res = await fetch ('https://win25-jsf-assignment.azurewebsites.net/api/faqs')
+            const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/faqs')
             const data = await res.json()
 
-            setAccordionItems(data)
+            setAccordions(data)
         }
 
-    fetchData()
-    }, [])   
+        fetchData()
+    }, [])
 
-
-    
     return (
 
         <section id="FAQ">
             <div id="faq-text">
                 <p className="H4">FAQ:s</p>
-
                 <h3 className="H3">Frequently Asked Questions</h3>
-
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h3>
 
             </div>
 
-             <div id="accordion-container">
+            <div id="accordion-container">
 
-            {
-                AccordionItems.map(item => (
-                     <Accordion
-                      key={item.id}
-                      title={item.title}
-                      description={item.description} />
-                ))
-            }
+                {
+                    accordions.map(accordion => (
+                        <Accordion
+                            key={accordion.id}
+                            title={accordion.title}
+                            description={accordion.description} />
+                    ))
+                }
 
             </div>
-
         </section>
-
     )
 }
 

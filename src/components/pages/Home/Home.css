@@ -7,6 +7,11 @@
     height: 80%;
     padding: 50px;
 
+    button:hover {
+        background-color: rgb(255, 255, 255);
+        color: var(--secondary-color);
+    }
+
 }
 
 #hero-text {

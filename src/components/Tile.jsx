@@ -1,10 +1,11 @@
 import React from 'react'
 import './Tile.css'
 
-function Tile(props) {
+function Tile({title, text}) {
   return (
     <div className="tile">
-        {props.children}
+        <p className="H5">{title}</p>
+        <p>{text}</p>
     </div>
   )
 

@@ -15,25 +15,32 @@ function Services() {
 
             <div id="bottom-wrapper">
                 <div>
-                    <Tile> <p className="H5">Diverse Unit Sizes</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                    </Tile>
+                    <Tile
+                        title="Diverse Unit Sizes"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+                    />
 
-                    <Tile> <p className="H5">Moving Assistance</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                    </Tile>
+                    <Tile
+                        title="Moving Assistance"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+                    />
+
                 </div>
 
                 <img src={BgImg} alt="" />
 
                 <div>
-                    <Tile> <p className="H5">Vehicle Storage</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                    </Tile>
 
-                    <Tile> <p className="H5">Top-Notch Security</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                    </Tile>
+                    <Tile
+                        title="Vehicle Storage"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+                    />
+
+                    <Tile
+                        title="Top-Notch Security"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+                    />
+
                 </div>
             </div>
         </section>

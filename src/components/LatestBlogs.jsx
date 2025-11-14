@@ -4,18 +4,17 @@ import Blog from './Blog'
 
 function LatestBlogs() {
 
-  //add state 
-  const [blogItems, setBlogItems] = useState([])
+  //Add state 
+  const [blogs, setBlogs] = useState([])
 
 
-  //function to get data from API
+  //Function to get data from API
   useEffect(() => {
 
     const fetchData = async () => {
       const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/blogs')
       const data = await res.json()
-      setBlogItems(data)
-
+      setBlogs(data)
     }
 
     fetchData()
@@ -37,14 +36,14 @@ function LatestBlogs() {
 
       <div id="blog-cards">
 
-        {blogItems.map((item) => (
+        {blogs.map((blog) => (
 
           <Blog
-            key={item.id}
-            title={item.title}
-            description={item.description}
-            imageUrl={item.imageUrl}
-            created={item.created} />
+            key={blog.id}
+            title={blog.title}
+            description={blog.description}
+            imageUrl={blog.imageUrl}
+            created={blog.created} />
 
         ))}
 
